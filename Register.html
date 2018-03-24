@@ -40,6 +40,28 @@
             footer {-webkit-order:3;order:3;}
         }
         </style>
+        <style>
+                .button {
+                    border: none;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    -webkit-transition-duration: 0.4s; /* Safari */
+                    transition-duration: 0.4s;
+                }
+                
+                .button1 {
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                }
+                
+                .button2:hover {
+                    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+                }
+                </style>
         </head>
         <body>
         
@@ -53,11 +75,11 @@
 <nav class="nav">
         <ul>
                 <center>
-                    <button onclick="window.location.href='Home Page.html'">Home</button>
-                    <button onclick="window.location.href='Events.html'" > Events </button>
-                    <button onclick="window.location.href='Connect.html'">Connect</button>
-                    <button onclick="window.location.href='Personal.html'">Sign Up</button>
-                    <button onclick="window.location.href='Sign In.html'">Sign in</button>
+                    <button class="button button2"; onclick="window.location.href='Home Page.html'">Home</button>
+                    <button class="button button2"; onclick="window.location.href='Events.html'" > Events </button>
+                    <button class="button button2"; onclick="window.location.href='Connect.html'">Connect</button>
+                    <button class="button button2"; onclick="window.location.href='Personal.html'">Sign Up</button>
+                    <button class="button button2"; onclick="window.location.href='Sign In.html'">Sign in</button>
                     </center>
         </ul>
         </nav>
@@ -80,10 +102,10 @@
         <input type="radio" name="type" value="Hackathon Organizer"> Hackathon Organizer<br><br>
 
     What is your Help You Hack account? <br> <br>
-    Email:<br>
+    Email:
     <input type="text" name="email">
     <br>
-    Password:<br>
+    Password:
     <input type="text" name="password">
     <br> <br>
 
@@ -91,7 +113,7 @@
     <input type="text" name="hackathon name">
     <br>
       </form>
-      <center><button onclick="window.location.href='Thank You.html'">Submit</button></center>
+      <center><button class="button button2"; onclick="window.location.href='Thank You.html'">Submit</button></center>
 
 </body>
 </html>
