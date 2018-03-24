@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Events</title>
+        <title>Register</title>
     </head>
 <style> 
         .flex-container {
@@ -24,7 +24,7 @@
         
         header {background: black;color:white;}
         footer {background: #aaa;color:white;}
-       .nav {background:#eee;} 
+        .nav {background:#eee;}
         
         .nav ul {
             list-style-type: none;
@@ -39,42 +39,59 @@
             .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
             footer {-webkit-order:3;order:3;}
         }
-</style>
-</head>
-<body>
+        </style>
+        </head>
+        <body>
         
         <div class="flex-container">
         <header><center>
-          <h1>Events</h1>
-          <p>Find hackathons near you.</p>
+          <h1>Register</h1>
+          <p>Register for a hackathon, or create your own!</p>
         </center>
         </header>
-
 
 <nav class="nav">
         <ul>
                 <center>
                     <button onclick="window.location.href='Home Page.html'">Home</button>
+                    <button onclick="window.location.href='Events.html'" > Events </button>
                     <button onclick="window.location.href='Connect.html'">Connect</button>
-                    <button onclick="window.location.href='Register.html'">Register</button>
                     <button onclick="window.location.href='Personal.html'">Sign Up</button>
                     <button onclick="window.location.href='Sign In.html'">Sign in</button>
                     </center>
         </ul>
         </nav>
+<body background="cherry-wood-flooring-texture-and-antique-cherry-designer-red-oak-oak-wood-flooring-cherry-l-3ce225507582ca80.jpg"></body>
+<style>
+        h1 {
+            color: white;
+        }
+        p  {
+            color: white;
+        }
+        body {
+          color: white;
+        }
+      </style>
+
+<form action="/action_page.php">
+    What are you registering as? <br> <br>
+        <input type="radio" name="type" value="Hackathon Participant"> Hackathon Participant<br>
+        <input type="radio" name="type" value="Hackathon Organizer"> Hackathon Organizer<br><br>
+
+    What is your Help You Hack account? <br> <br>
+    Email:<br>
+    <input type="text" name="email">
+    <br>
+    Password:<br>
+    <input type="text" name="password">
+    <br> <br>
+
+    What is the name of the hackathon?<br><br>
+    <input type="text" name="hackathon name">
+    <br>
+      </form>
+      <center><button onclick="window.location.href='Thank You.html'">Submit</button></center>
+
 </body>
-
-
-<body background="cherry-wood-flooring-texture-and-antique-cherry-designer-red-oak-oak-wood-flooring-cherry-l-3ce225507582ca80.jpg"></body><center>
-<p style="Color:#e6ffff;">Check out these websites for cool events</p> <br>
-<button onclick="window.location.href='https://www.geekwire.com/calendar/'">GeekWire</button>
-<p></p>
-<button onclick="window.location.href='https://www.eventbrite.com/d/oh--columbus/hackathon/'">Eventbrite for Columbus,OH</button>
-<p></p>
-<button onclick="window.location.href='https://mlh.io/seasons/na-2018/events'"> Major League Hacking</button>
-<p></p>
-<button onclick="window.location.href='http://hack.osu.edu/hs/2018/'"> High School Hackathon</button> </center>
-<p></p>
-
 </html>
-
