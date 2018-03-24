@@ -1,11 +1,87 @@
-<html>
 
-<h2>Get to know other people in your area that are interested in coding! </h2>
-<p> Put in your email and name so we can tell you about upcoming hackathons.</p>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Connect</title>
+        </head>
+    <style> 
+            .flex-container {
+                display: -webkit-flex;
+                display: flex;  
+                -webkit-flex-flow: row wrap;
+                flex-flow: row wrap;
+                text-align: center;
+            }
+            
+            .flex-container > * {
+                padding: 15px;
+                -webkit-flex: 1 100%;
+                flex: 1 100%;
+            }
+            
+            .article {
+                text-align: left;
+            }
+            
+            header {background: black;color:white;}
+            footer {background: #aaa;color:white;}
+            .nav {background:#eee;}
+            
+            .nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            .nav ul a {
+                text-decoration: none;
+            }
+            
+            @media all and (min-width: 768px) {
+                .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+                .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+                footer {-webkit-order:3;order:3;}
+            }
+            </style>
+            </head>
+            <body>
+            
+            <div class="flex-container">
+            <header><center>
+              <h1>Sign up</h1>
+              <p>Tell us a little about yourself.</p>
+            </center>
+            </header>
+    
+    
+    <nav class="nav">
+            <ul>
+                    <center>
+                        <button onclick="window.location.href='Home Page.html'">Home</button>
+                        <button onclick="window.location.href='Events.html'" > Events </button>
+                        <button onclick="window.location.href='Personal.html'">Sign Up</button>
+                        <button>Sign in</button>
+                        </center>
+            </ul>
+            </nav>
+    <body background="cherry-wood-flooring-texture-and-antique-cherry-designer-red-oak-oak-wood-flooring-cherry-l-3ce225507582ca80.jpg"></body>
+    
+          </body>
+  <body>
+    <style>
+        h1 {
+            color: white;
+        }
+        p  {
+            color: white;
+        }
+        body {
+          color: white;
+        }
+      </style>
 
 <form action="/action_page.php">
   First name:<br>
-  <input type="text" name="firstname">
+  <input type="text" name="firstname"
+  style="background-color:white";>
   <br>
   Last name:<br>
   <input type="text" name="lastname">
@@ -17,25 +93,25 @@ Email:<br>
   </form> 
 
   
- What do you like? Select what you like. <br>
+ <center>Tell us about yourself. </center>
  
  <form action="/action_page.php">
 
-  <p> Coding experince.</p>
+  <p> Coding experince:</p>
   <input type="checkbox" name="like1" value="java">I know Java
   <br>
   <input type="checkbox" name="like2" value="hyml">I know html
   <br>
   <input type="checkbox" name="like3" value="CSS">I know CSS
   <br>
-  <p> skill set. </p>
+  <p> Skill set: </p>
   <input type="checkbox" name="like4" value="beginner"> I am a beginner coder
   <br>
   <input type="checkbox" name="like5" value="average"> I am a average coder
   <br>
   <input type="checkbox" name="like6" value="advanced">I am a advanced  coder
   <br>
-  <p>Intrests. </p>
+  <p>Intrests: </p>
   <input type="checkbox" name="like7" value="Pets">I have or like pets
   <br>
   <input type="checkbox" name="like8" value="draw">I like drawing or art
@@ -45,4 +121,5 @@ Email:<br>
   <br>
   <input type="submit">
   </form> 
+</body>
 </html>
