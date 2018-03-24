@@ -1,1 +1,18 @@
+<html>
 
+<h2>Get to know other people in your area that are interested in coding! </h2>
+<p> Put in your email and name so we can tell you about up coming hackathons.</p>
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  <br>
+Email:<br>
+  <input type="text" name="email">
+  <br>
+  <input type="submit" value="Submit">
+  </form> 
+</html>
