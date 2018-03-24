@@ -8,16 +8,65 @@
     <div id="hackathon-process-1">
         <div id="hackathon-process-1" style="background: url(hackathon-process-1.png) no-repeat; width: 100%; height: 100%; background-size: 100%;"></div>
     </div>
+    <style> 
+            .flex-container {
+                display: -webkit-flex;
+                display: flex;  
+                -webkit-flex-flow: row wrap;
+                flex-flow: row wrap;
+                text-align: center;
+            }
+            
+            .flex-container > * {
+                padding: 15px;
+                -webkit-flex: 1 100%;
+                flex: 1 100%;
+            }
+            
+            .article {
+                text-align: left;
+            }
+            
+            header {background: black;color:white;}
+            footer {background: #aaa;color:white;}
+            .nav {background:#eee;}
+            
+            .nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            .nav ul a {
+                text-decoration: none;
+            }
+            
+            @media all and (min-width: 768px) {
+                .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+                .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+                footer {-webkit-order:3;order:3;}
+            }
+            </style>
+            </head>
+            <body>
+            
+            <div class="flex-container">
+            <header><center>
+              <h1>Welcome to Help You Hack</h1>
+              <p>We'll help you connect before and after a hackathon.</p>
+            </center>
+            </header>
 
 
-<center><h1>Welcome to Help You Hack</h1>
-    <p>We'll help you connect before and after a hackathon.</p></center>
-<center>
-    <button onclick="window.location.href='Events.html'" > Events </button>
-<button onclick="window.location.href='Personal.html'">Personal</button>
-<button>Sign in</button>
-<button>Sing up </button>
-</center>
+    <nav class="nav">
+            <ul>
+                    <center>
+                        <button onclick="window.location.href='Home Page.html'">Home</button>
+                        <button onclick="window.location.href='Events.html'" > Events </button>
+                        <button onclick="window.location.href='Personal.html'">Sign Up</button>
+                        <button>Sign in</button>
+                        </center>
+            </ul>
+            </nav>
+
 
 </body>
 </html>
